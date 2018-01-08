@@ -1,1 +1,2 @@
 <%= @user.email  %>
+<%= link_to 'Me gusta', interactions_path(user_two_id: @user.id, like: true), method: :post %> | <%= link_to 'No me gusta', interactions_path(user_two_id: @user.id, like: false), method: :post %>
