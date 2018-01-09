@@ -1,4 +1,5 @@
 class InteractionsController < ApplicationController
+
 		def create
 		Interaction.create(
 			user_one_id: current_user.id,
